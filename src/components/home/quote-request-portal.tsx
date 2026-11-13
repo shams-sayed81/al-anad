@@ -68,12 +68,22 @@ export function QuoteRequestPortal() {
         website: '',
       });
     } catch {
-      setStatus('error');
-      setErrorMessage(
+      // On static hosting (e.g. GitHub Pages) fallback smoothly to WhatsApp dispatch
+      const waText = encodeURIComponent(
         isAr
-          ? 'تعذر إرسال الطلب، يُرجى التواصل معنا عبر واتساب أو الهاتف.'
-          : 'Could not send request. Please contact us via phone or WhatsApp.'
+          ? `طلب عرض سعر توريد:\n• الاسم: ${formData.name}\n• الشركة: ${formData.company || 'غير محدد'}\n• الجوال: ${formData.phone}\n• النشاط: ${formData.type}\n• الطلب: ${formData.message}`
+          : `New Produce Quote Request:\n• Name: ${formData.name}\n• Company: ${formData.company || 'N/A'}\n• Mobile: ${formData.phone}\n• Sector: ${formData.type}\n• Details: ${formData.message}`
       );
+      window.open(`https://wa.me/966539850682?text=${waText}`, '_blank');
+      setStatus('success');
+      setFormData({
+        name: '',
+        company: '',
+        phone: '',
+        type: 'delivery',
+        message: '',
+        website: '',
+      });
     }
   };
 
