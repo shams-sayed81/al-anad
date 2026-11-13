@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-950: #09170e;
+  --forest-900: #0e2316;
+  --forest-800: #183d2b;
+  --forest-700: #23553d;
+  --natural-600: #356b48;
+  --natural-500: #4a8b63;
+  --sage-400: #a8b99a;
+  --sage-300: #cad7bf;
+  --sage-100: #f0f4ed;
+  --ivory-canvas: #faf8f3;
+  --ivory-surface: #f3f0e6;
+  --ivory-border: #e7e2d3;
+  --gold-500: #d6a85f;
+  --gold-600: #bc8f47;
+  --gold-100: #f8f1e4;
+  --ink-primary: #0e2316;
+  --ink-secondary: #4a5c50;
+  --ink-muted: #7c8e82;
+}
+
+html {
+  scroll-behavior: auto !important; /* Managed by Lenis */
+  background-color: var(--ivory-canvas);
+  color: var(--ink-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--ivory-canvas);
+}
+
+/* Custom Selection */
+::selection {
+  background-color: var(--forest-800);
+  color: var(--gold-500);
+}
+
+/* Lenis Recommended CSS */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Direction-aware typography */
+[dir="rtl"] {
+  font-family: var(--font-readex-pro), var(--font-alexandria), system-ui, -apple-system, sans-serif;
+}
+
+[dir="ltr"] {
+  font-family: var(--font-jakarta), var(--font-readex-pro), system-ui, -apple-system, sans-serif;
+}
+
+/* Hairline borders & subtle card lines */
+.border-subtle {
+  border-color: rgba(24, 61, 43, 0.08);
+}
+
+.border-subtle-gold {
+  border-color: rgba(214, 168, 95, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ivory-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sage-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--forest-800);
+}
+
+/* Infinite Marquee */
+[dir="rtl"] .animate-marquee {
+  animation: marquee-rtl 28s linear infinite;
+}
+
+[dir="ltr"] .animate-marquee {
+  animation: marquee-ltr 28s linear infinite;
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(50%); }
+}
+
+@keyframes marquee-ltr {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-hero-float {
+  animation: heroFloat 3.8s ease-in-out infinite;
+}
+
+/* Hide scrollbar while keeping scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Modal & Dropdown Animations */
+@keyframes modalBackdropIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-modal-backdrop {
+  animation: modalBackdropIn 0.22s ease-out forwards;
+}
+
+.animate-modal-panel {
+  animation: modalPanelIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-dropdown-in {
+  animation: dropdownIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-hero-float,
+  .animate-modal-backdrop,
+  .animate-modal-panel,
+  .animate-dropdown-in {
+    animation: none !important;
+  }
+}
+

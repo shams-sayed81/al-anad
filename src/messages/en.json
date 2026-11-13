@@ -1,0 +1,202 @@
+{
+  "brand": {
+    "name": "Al Anad National",
+    "enName": "AL ANAD NATIONAL",
+    "tagline": "Fresh Produce & Cold Chain Logistics",
+    "est": "Established in 2007"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "supplyChain": "Supply Chain",
+    "services": "Services",
+    "partners": "Partners",
+    "contact": "Contact Us",
+    "cta": "Request a Quote",
+    "langToggle": "العربية"
+  },
+  "hero": {
+    "eyebrow": "FRESH PRODUCE • COLD CHAIN LOGISTICS",
+    "title": "From Our Land to Your Markets",
+    "lead": "Daily fresh produce from 35 local farms and 12+ international sources, delivered across Saudi Arabia in temperature-controlled trucks.",
+    "ctaProducts": "Explore Products",
+    "ctaStory": "Our Story",
+    "exploreMore": "Discover More",
+    "imageAlt": "Al Anad National farm harvest, refrigerated logistics, and fresh produce",
+    "stats": {
+      "farms": {
+        "value": "35",
+        "label": "Local Farms"
+      },
+      "fleet": {
+        "value": "+15",
+        "label": "Refrigerated Trucks"
+      },
+      "years": {
+        "value": "+19",
+        "label": "Years in Market"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About Al Anad National",
+    "title": "A Supply Chain Direct From the Source",
+    "description": "From Saudi farms to your shelves, every shipment is graded, cooled, and dispatched under strict food safety controls.",
+    "imageAlt": "Al Anad National harvest and fresh vine tomatoes",
+    "features": {
+      "farms": "Trusted Local Farms",
+      "network": "Kingdom-Wide Distribution",
+      "quality": "Inspected at Every Stage"
+    },
+    "pillars": {
+      "mission": {
+        "num": "01",
+        "title": "Our Mission",
+        "desc": "To deliver reliable grading, cold storage, and scheduled produce supply that our commercial partners can count on daily."
+      },
+      "vision": {
+        "num": "02",
+        "title": "Our Vision",
+        "desc": "To maintain a dependable domestic supply base for fresh fruits and vegetables covering client demand across all seasons."
+      },
+      "ambition": {
+        "num": "03",
+        "title": "Our Ambition",
+        "desc": "To support Saudi Vision 2030 food security goals as a primary fresh-produce supplier for grocery delivery platforms and retailers across the Kingdom and GCC."
+      }
+    }
+  },
+  "journey": {
+    "eyebrow": "Our Supply Chain",
+    "title": "Four Stages From Farm to Market",
+    "step1": {
+      "title": "Harvest & Reception",
+      "sub": "From our local farms",
+      "desc": "Working with 35 local farms to receive crops at optimal ripeness.",
+      "alt": "Local farm harvest and tractor"
+    },
+    "step2": {
+      "title": "Grading & Packing",
+      "sub": "Strict hygiene checks",
+      "desc": "Trained teams grade and pack each batch under strict food-safety controls.",
+      "alt": "Sorting and packing facility"
+    },
+    "step3": {
+      "title": "Cold Storage & Staging",
+      "sub": "Climate-controlled rooms",
+      "desc": "Temperature-controlled warehouses hold freshness and stage orders on ready pallets.",
+      "alt": "Quality control specialists in cold storage"
+    },
+    "step4": {
+      "title": "Refrigerated Dispatch",
+      "sub": "Our dedicated fleet",
+      "desc": "15+ refrigerated trucks deliver orders on schedule without breaking the cold chain.",
+      "alt": "Al Anad refrigerated highway logistics"
+    }
+  },
+  "products": {
+    "eyebrow": "Our Produce",
+    "title": "Fresh Vegetables & Fruits",
+    "exploreAll": "Explore All Products",
+    "clickToQuote": "Request Quote",
+    "searchPlaceholder": "Search produce by Arabic or English name...",
+    "categories": {
+      "all": "All",
+      "veg": "Vegetables",
+      "leaf": "Leafy Greens & Herbs",
+      "fruit": "Fruits"
+    },
+    "noResults": "No items match your search criteria.",
+    "countBadge": "Available Items",
+    "note": "Availability varies by harvest season. Contact our sales team for full wholesale catalogs and daily pricing."
+  },
+  "services": {
+    "eyebrow": "Our Services & Fleet",
+    "title": "Refrigerated Fleet & Cold Chain Services",
+    "subtitle": "Temperature-controlled transport and scheduled distribution across the Kingdom.",
+    "badge": "Continuous Cold Chain",
+    "fleetTitle": "Our Refrigerated Fleet",
+    "fleetDesc": "Over 15 modern trucks equipped with 24/7 digital temperature monitoring to keep produce fresh from warehouse to delivery.",
+    "fleetImageAlt": "Al Anad National refrigerated truck on the highway",
+    "pillars": {
+      "punctual": {
+        "title": "Punctual Dispatch",
+        "sub": "Scheduled daily routes"
+      },
+      "safety": {
+        "title": "Food Safety",
+        "sub": "Strict hygiene controls"
+      },
+      "cooling": {
+        "title": "Controlled Cooling",
+        "sub": "Digital temp monitoring"
+      }
+    },
+    "s1": {
+      "title": "Local Produce Distribution",
+      "desc": "Distributing local farm produce to supermarkets, quick-commerce apps, and food enterprises."
+    },
+    "s2": {
+      "title": "Global Crop Sourcing",
+      "desc": "Contracting with 12+ international suppliers to maintain year-round variety."
+    },
+    "s3": {
+      "title": "Enterprise Supply Contracts",
+      "desc": "Fulfilling recurring institutional volumes tailored to seasonal demand."
+    }
+  },
+  "clients": {
+    "eyebrow": "Our Partners",
+    "title": "Trusted by Leading Retailers & Delivery Platforms",
+    "subtitle": "Supplying fresh vegetables and fruits to major retail chains and quick-commerce platforms across Saudi Arabia.",
+    "sectors": {
+      "c1": "Quick-Commerce & Grocery Delivery Apps",
+      "c2": "Hypermarkets, Supermarkets & Wholesale",
+      "c3": "Hotels & Restaurants",
+      "c4": "Catering & Food Service Companies"
+    },
+    "partnersTitle": "Our Partners"
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Request a Commercial Supply Quote",
+    "desc": "Send us your required items and estimated volumes. Our sales team will reply with a quote within 24 working hours.",
+    "phoneLabel": "Landline",
+    "phone": "011 265 1373",
+    "phoneBadge": "Riyadh",
+    "mobileLabel": "Mobile / WhatsApp",
+    "mobile": "053 985 0682",
+    "mobileBadge": "WhatsApp",
+    "emailLabel": "Email",
+    "email": "info@anadcorp.com",
+    "emailBadge": "Quotes",
+    "responseTime": "Quotes issued within 24 working hours",
+    "form": {
+      "name": "Full Name",
+      "company": "Company / Enterprise",
+      "phone": "Mobile Number",
+      "type": "Business Sector",
+      "message": "Required Produce & Volumes",
+      "submit": "Submit Quote Request",
+      "types": {
+        "delivery": "Delivery & Quick-Commerce Apps",
+        "market": "Hyper / Supermarket / Wholesale",
+        "hotel": "Hotels & Restaurants",
+        "catering": "Catering Companies",
+        "other": "Other"
+      },
+      "success": "Your request has been received. Our sales team will get in touch shortly.",
+      "error": "Failed to submit request. Please reach us via phone or WhatsApp."
+    }
+  },
+  "footer": {
+    "summary": "A Saudi trading company supplying fresh fruits and vegetables with an unbroken cold chain and dedicated refrigerated fleet since 2007.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "location": "Riyadh, Kingdom of Saudi Arabia",
+    "rights": "Al Anad National. All rights reserved.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  }
+}
