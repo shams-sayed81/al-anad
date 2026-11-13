@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { getGSAP } from '@/lib/gsap';
 import { PARTNERS } from '@/data/partners';
+import { asset } from '@/lib/asset-path';
 
 export function PartnersSection() {
   const locale = useLocale();
@@ -126,7 +127,7 @@ export function PartnersSection() {
               >
                 <div className="relative w-full h-9 sm:h-11">
                   <Image
-                    src={p.logo}
+                    src={asset(p.logo)}
                     alt={isAr && p.nameAr ? p.nameAr : p.name}
                     fill
                     sizes="(max-width: 640px) 120px, 160px"
@@ -146,7 +147,7 @@ export function PartnersSection() {
               >
                 <div className="relative w-full h-9 sm:h-11">
                   <Image
-                    src={p.logo}
+                    src={asset(p.logo)}
                     alt={isAr && p.nameAr ? p.nameAr : p.name}
                     fill
                     sizes="(max-width: 640px) 120px, 160px"

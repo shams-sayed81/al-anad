@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { Truck, ThermometerSnowflake, ShieldCheck, Clock } from 'lucide-react';
+import { asset } from '@/lib/asset-path';
 
 export function FleetBanner() {
   const locale = useLocale();
@@ -12,7 +13,7 @@ export function FleetBanner() {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/facility/trucks.jpg"
+          src={asset('/images/facility/trucks.jpg')}
           alt="Al Anad National Refrigerated Fleet"
           fill
           className="object-cover object-center scale-105"

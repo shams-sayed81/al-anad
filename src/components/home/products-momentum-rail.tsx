@@ -7,6 +7,7 @@ import { getGSAP } from '@/lib/gsap';
 import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight } from 'lucide-react';
 import { ProduceCatalogModal } from '@/components/common/produce-catalog-modal';
 import { QuoteModal } from '@/components/common/quote-modal';
+import { asset } from '@/lib/asset-path';
 
 export function ProductsMomentumRail() {
   const locale = useLocale();
@@ -256,7 +257,7 @@ export function ProductsMomentumRail() {
                     className="group relative flex-shrink-0 w-[82%] sm:w-[calc((100%-20px)/2)] md:w-[calc((100%-60px)/4)] snap-start aspect-[16/11] sm:aspect-[16/10] rounded-2xl overflow-hidden shadow-md border border-forest-dark/10 bg-ivory cursor-pointer transition-all duration-500 hover:shadow-xl hover:border-gold/40 hover:-translate-y-1 text-start focus:outline-none focus:ring-2 focus:ring-gold"
                   >
                     <Image
-                      src={product.image}
+                      src={asset(product.image)}
                       alt={isAr ? product.nameAr : product.nameEn}
                       fill
                       sizes="(max-width: 640px) 82vw, (max-width: 1024px) 50vw, 25vw"

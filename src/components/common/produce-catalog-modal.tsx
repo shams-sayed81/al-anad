@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { X, Search, Sprout, Leaf, Apple, LayoutGrid, ArrowLeft, ArrowRight } from 'lucide-react';
 import { PRODUCTS, type ProductCategory } from '@/data/products';
 import { matchesQuery } from '@/lib/arabic-search';
+import { asset } from '@/lib/asset-path';
 
 interface ProduceCatalogModalProps {
   isOpen: boolean;
@@ -186,7 +187,7 @@ export function ProduceCatalogModal({
                 >
                   <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#F3F0E6]">
                     <Image
-                      src={product.image}
+                      src={asset(product.image)}
                       alt={isAr ? product.nameAr : product.nameEn}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { getGSAP } from '@/lib/gsap';
 import { ShieldCheck, Truck, Sprout } from 'lucide-react';
+import { asset } from '@/lib/asset-path';
 
 export function AboutSection() {
   const locale = useLocale();
@@ -281,7 +282,7 @@ export function AboutSection() {
                   style={{ clipPath: 'url(#about-organic-leaf-clip)' }}
                 >
                   <Image
-                    src="/images/editorial/about_harvest_hd.jpg"
+                    src={asset('/images/editorial/about_harvest_hd.jpg')}
                     alt={t('imageAlt')}
                     fill
                     sizes="(max-width: 1024px) 100vw, 45vw"

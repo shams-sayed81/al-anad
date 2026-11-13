@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { CuratedProduct } from '@/data/curated-products';
+import { asset } from '@/lib/asset-path';
 
 interface ProductCardProps {
   product: CuratedProduct;
@@ -22,7 +23,7 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
       {/* 1. Full-Bleed High-Quality Macro Photography */}
       <div className="absolute inset-0 z-0 bg-forest-dark">
         <Image
-          src={product.image}
+          src={asset(product.image)}
           alt={name}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

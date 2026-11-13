@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
+import { asset } from '@/lib/asset-path';
 
 interface LogoProps {
   variant?: 'light' | 'dark';
@@ -15,7 +16,7 @@ export function Logo({ variant = 'dark', className = '' }: LogoProps) {
     <Link href="/" className={`inline-flex items-center transition-transform duration-300 hover:scale-[1.02] ${className}`}>
       <div className="relative h-10 w-44 md:h-12 md:w-52">
         <Image
-          src={isLight ? '/brand/al_anad_master_logo_light.png' : '/brand/al_anad_master_logo_transparent.png'}
+          src={asset(isLight ? '/brand/al_anad_master_logo_light.png' : '/brand/al_anad_master_logo_transparent.png')}
           alt="Al Anad National - العناد الوطنية"
           fill
           priority

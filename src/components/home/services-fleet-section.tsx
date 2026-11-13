@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { getGSAP } from '@/lib/gsap';
 import { Clock, ShieldCheck, Snowflake } from 'lucide-react';
+import { asset } from '@/lib/asset-path';
 
 export function ServicesFleetSection() {
   const locale = useLocale();
@@ -159,7 +160,7 @@ export function ServicesFleetSection() {
           <div ref={truckImgRef} className="absolute inset-y-0 end-0 w-full sm:w-[58%] lg:w-[54%] pointer-events-none select-none z-0">
             <div className="relative w-full h-full">
               <Image
-                src="/images/editorial/fleet_truck_road.jpg"
+                src={asset('/images/editorial/fleet_truck_road.jpg')}
                 alt={t('fleetImageAlt')}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

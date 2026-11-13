@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { ThermometerSnowflake, ShieldCheck, ArrowLeft, ArrowRight } from 'lucide-react';
+import { asset } from '@/lib/asset-path';
 
 export function ServicesSection() {
   const locale = useLocale();
@@ -46,7 +47,7 @@ export function ServicesSection() {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_-15px_rgba(24,61,43,0.2)] bg-forest-dark">
               <Image
-                src="/images/editorial/fleet_logistics_highway.jpg"
+                src={asset('/images/editorial/fleet_logistics_highway.jpg')}
                 alt="Refrigerated Fleet Logistics"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"

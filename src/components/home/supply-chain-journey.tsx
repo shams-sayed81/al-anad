@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { getGSAP } from '@/lib/gsap';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { asset } from '@/lib/asset-path';
 
 export function SupplyChainJourney() {
   const locale = useLocale();
@@ -243,7 +244,7 @@ export function SupplyChainJourney() {
               >
                 <div data-journey-img-wrap className="absolute inset-0">
                   <Image
-                    src={stage.image}
+                    src={asset(stage.image)}
                     alt={stage.alt}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

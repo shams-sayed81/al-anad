@@ -8,6 +8,7 @@ import { LenisProvider } from '@/lib/lenis-provider';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { WhatsAppPill } from '@/components/common/whatsapp-pill';
+import { asset } from '@/lib/asset-path';
 import '@/styles/globals.css';
 
 export function generateStaticParams() {
@@ -30,8 +31,8 @@ export async function generateMetadata({
       ? 'كيان تجاري متخصص بتوريد الخضار والفواكه بأعلى معايير الجودة وبسلسلة تبريد متكاملة منذ عام 2007 في المملكة العربية السعودية.'
       : 'A leading Saudi agricultural trading company specializing in fresh produce supply and cold-chain logistics since 2007.',
     icons: {
-      icon: '/favicon.ico',
-      apple: '/brand/al-anad-new-logo-128.png',
+      icon: asset('/favicon.ico'),
+      apple: asset('/brand/al-anad-new-logo-128.png'),
     },
   };
 }

@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { PARTNERS } from '@/data/partners';
+import { asset } from '@/lib/asset-path';
 
 export function PartnersMarquee() {
   const locale = useLocale();
@@ -55,7 +56,7 @@ export function PartnersMarquee() {
                 className="flex-shrink-0 flex items-center justify-center transition-all duration-300 opacity-65 hover:opacity-100 hover:scale-105"
               >
                 <Image
-                  src={p.logo}
+                  src={asset(p.logo)}
                   alt={p.name}
                   width={110}
                   height={48}

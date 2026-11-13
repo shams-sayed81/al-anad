@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { getGSAP } from '@/lib/gsap';
 import { useLenis } from '@/lib/lenis-provider';
 import { ArrowDown, ArrowLeft, ArrowRight } from 'lucide-react';
+import { asset } from '@/lib/asset-path';
 
 export function HeroInteractive() {
   const locale = useLocale();
@@ -137,7 +138,7 @@ export function HeroInteractive() {
         >
           <div className="relative w-full h-full">
             <Image
-              src="/images/hero/hero_master_fa1a5da8.jpg"
+              src={asset('/images/hero/hero_master_fa1a5da8.jpg')}
               alt={t('imageAlt')}
               fill
               priority
